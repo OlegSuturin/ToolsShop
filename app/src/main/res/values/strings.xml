@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ToolsShop</string>
+    <string name="logo_dscr">Логотип магазина инструментов</string>
+    <string name="drill_dscr_actionbar">Дрели:</string>
+    <string-array name="tools">
+        <item>Дрели</item>
+        <item>Перфораторы</item>
+        <item>Болгарки</item>
+    </string-array>
+
+
+</resources>
