@@ -32,13 +32,13 @@ public class DrillCategoryActivity extends AppCompatActivity {
             actionBar.hide();   //скрыть Акшин-бар
         }
 
-        drills = new ArrayList<>();    //создаем адаптер для размещения массива дрелей в listViewDrills
+        drills = new ArrayList<>();    //создаем массив
         drills.add(new Drill(getString(R.string.drill_interskol_title), getString(R.string.drill_interskol_info), R.drawable.interskol));
         drills.add(new Drill(getString(R.string.drill_makita_title), getString(R.string.drill_makita_info), R.drawable.makito));
         drills.add(new Drill(getString(R.string.drill_dewalt_title), getString(R.string.drill_dewalt_info), R.drawable.dewault));
-
+                                    //  оздаем адаптер для размещения массива дрелей в listViewDrills
         ArrayAdapter<Drill> adapter = new ArrayAdapter <>(getApplicationContext(), android.R.layout.simple_list_item_1, drills);
-        listViewDrills.setAdapter(adapter);
+        listViewDrills.setAdapter(adapter);   //вносим данные на listView
 
         listViewDrills.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
